@@ -186,6 +186,10 @@ server.post('/cards', (req, res) => {
   }
 });
 
+/**
+ * Para las peticiones tipo DELETE se necesita un id en el query string, para invocar al metodo delteCard de la 
+ * coleccion, en caso de cualquier error se devuelve success = false con el error correspondiente bajo message
+ */
 server.delete('/cards', (req, res) => {
   if (!req.query.user) {
     res.send({
@@ -236,6 +240,11 @@ server.delete('/cards', (req, res) => {
   }
 });
 
+/**
+ * Para las peticiones tipo PATCH se le requiere a la peticion un id en el querystring y en el cuerpo una carta nueva, 
+ * que para modificar la carta existente con ese id usando el método updateCard y pasandole la carta del cuerpo de la 
+ * peticion
+ */
 server.patch('/cards', (req, res) => {
   if (!req.query.user) {
     res.send({
