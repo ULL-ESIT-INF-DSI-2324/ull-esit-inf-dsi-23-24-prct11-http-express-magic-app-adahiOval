@@ -1,0 +1,16 @@
+{
+  "entryPoints": [
+    "./src/classes/Card.ts",
+    "./src/classes/CardReader.ts",
+    "./src/classes/CardTypes.ts",
+    "./src/classes/Collection.ts",
+    "./src/classes/CollectionPrinter.ts",
+    "./src/classes/CollectionReader.ts",
+    "./src/classes/CollectionWriter.ts",
+    "./src/classes/EventEmitterServer.ts",
+    "./src/magic-client.ts",
+    "./src/magic-server.ts",
+  ],
+
+  "out": "./docs"
+}

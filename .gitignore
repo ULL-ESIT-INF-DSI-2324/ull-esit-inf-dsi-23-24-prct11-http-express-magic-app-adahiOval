@@ -1,0 +1,7 @@
+dist
+node_modules
+.vscode
+.nyc_output
+coverage
+src/classes/*.js
+src/*.js

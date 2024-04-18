@@ -1,0 +1,44 @@
+{
+  "name": "practica10",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "tsc-watch --onSuccess \"node dist/functions.js\"",
+    "doc": "typedoc",
+    "test": "mocha tests/**/*spec.ts",
+    "coverage": "c8 npm test && c8 report --reporter=lcov"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.3.12",
+    "@types/inquirer": "^9.0.7",
+    "@types/lowdb": "^1.0.15",
+    "@types/mocha": "^10.0.6",
+    "@types/yargs": "^17.0.32",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "c8": "^9.1.0",
+    "chai": "^5.1.0",
+    "chai-spies": "^1.1.0",
+    "eslint": "^8.57.0",
+    "esm": "^3.2.25",
+    "inquirer": "^9.2.16",
+    "lowdb": "^7.0.1",
+    "mocha": "^10.3.0",
+    "ts-node": "^10.9.2",
+    "tsc-watch": "^6.0.4",
+    "tsconfig-paths": "^4.2.0",
+    "typedoc": "^0.25.12",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
