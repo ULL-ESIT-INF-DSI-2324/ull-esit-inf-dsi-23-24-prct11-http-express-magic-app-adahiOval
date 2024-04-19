@@ -106,7 +106,7 @@ server.post('/cards', (req, res) => {
             message: 'Properties missing'
           });
         } else {
-          const cardType: CardType = queryCard.Type as CardType;
+        const cardType: CardType = queryCard.Type as CardType;
         const cardColor: CardColor = queryCard.Color as CardColor;
         const cardRarity: CardRarity = queryCard.Rarity as CardRarity;
         let cardStrength: number = 0;
